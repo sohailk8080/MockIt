@@ -1,4 +1,4 @@
 module.exports = {
   testEnvironment: 'node',
-  testMatch: ['pact/users.test.js'], // or wherever your contract tests live
+  testMatch: ['Mock/pact/users.test.js'], // or wherever your contract tests live
 };
