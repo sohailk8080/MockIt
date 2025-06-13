@@ -1,0 +1,29 @@
+{
+  "name": "mock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 4000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "contract-test": "jest pact/users.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sohailk8080/MockIt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sohailk8080/MockIt/issues"
+  },
+  "homepage": "https://github.com/sohailk8080/MockIt#readme",
+  "dependencies": {
+    "@pact-foundation/pact": "^15.0.1"
+  },
+  "devDependencies": {
+    "jest": "^30.0.0",
+    "node-fetch": "^2.7.0"
+  }
+}

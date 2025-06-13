@@ -1,0 +1,25 @@
+# Logfile created on 2025-06-13 23:55:24 +0530 by logger.rb/v1.6.4
+I, [2025-06-13T23:55:24.408864 #27720]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-13T23:55:24.408990 #27720]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-13T23:55:24.409001 #27720] DEBUG -- : body :
+I, [2025-06-13T23:55:24.422601 #27720]  INFO -- : Received response with status: 200, headers: {"x-powered-by" => "tinyhttp", "access-control-allow-origin" => "*", "access-control-allow-methods" => "GET, HEAD, PUT, PATCH, POST, DELETE", "access-control-allow-headers" => "content-type", "content-type" => "application/json", "date" => "Fri, 13 Jun 2025 18:25:24 GMT", "connection" => "keep-alive", "keep-alive" => "timeout=5", "content-length" => "35"}, see debug logs for body
+D, [2025-06-13T23:55:24.422615 #27720] DEBUG -- : body: {
+  "id": "1",
+  "name": "Sohail"
+}
+I, [2025-06-14T00:05:18.969352 #28449]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-14T00:05:18.969488 #28449]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T00:05:18.969500 #28449] DEBUG -- : body :
+I, [2025-06-14T00:05:18.973636 #28449]  INFO -- : Received response with status: 200, headers: {"x-powered-by" => "tinyhttp", "access-control-allow-origin" => "*", "access-control-allow-methods" => "GET, HEAD, PUT, PATCH, POST, DELETE", "access-control-allow-headers" => "content-type", "content-type" => "application/json", "date" => "Fri, 13 Jun 2025 18:35:18 GMT", "connection" => "keep-alive", "keep-alive" => "timeout=5", "content-length" => "35"}, see debug logs for body
+D, [2025-06-14T00:05:18.973654 #28449] DEBUG -- : body: {
+  "id": "1",
+  "name": "Sohail"
+}
+I, [2025-06-14T00:05:54.643996 #28627]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-14T00:05:54.644149 #28627]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T00:05:54.644163 #28627] DEBUG -- : body :
+I, [2025-06-14T00:05:54.646207 #28627]  INFO -- : Received response with status: 200, headers: {"x-powered-by" => "tinyhttp", "access-control-allow-origin" => "*", "access-control-allow-methods" => "GET, HEAD, PUT, PATCH, POST, DELETE", "access-control-allow-headers" => "content-type", "content-type" => "application/json", "date" => "Fri, 13 Jun 2025 18:35:54 GMT", "connection" => "keep-alive", "keep-alive" => "timeout=5", "content-length" => "35"}, see debug logs for body
+D, [2025-06-14T00:05:54.646246 #28627] DEBUG -- : body: {
+  "id": "1",
+  "name": "Sohail"
+}

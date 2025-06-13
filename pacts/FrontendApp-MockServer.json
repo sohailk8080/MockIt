@@ -1,0 +1,43 @@
+{
+  "consumer": {
+    "name": "FrontendApp"
+  },
+  "interactions": [
+    {
+      "description": "a request for a user",
+      "providerState": "user exists",
+      "request": {
+        "headers": {
+          "Accept": "application/json"
+        },
+        "method": "GET",
+        "path": "/users/1"
+      },
+      "response": {
+        "body": {
+          "id": "1",
+          "name": "Sohail"
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "status": 200
+      }
+    }
+  ],
+  "metadata": {
+    "pact-js": {
+      "version": "15.0.1"
+    },
+    "pactRust": {
+      "ffi": "0.4.22",
+      "models": "1.2.3"
+    },
+    "pactSpecification": {
+      "version": "2.0.0"
+    }
+  },
+  "provider": {
+    "name": "MockServer"
+  }
+}

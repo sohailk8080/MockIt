@@ -1,0 +1,48 @@
+name: Contract Testing CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  contract-tests:
+    runs-on: ubuntu-latest
+
+    services:
+      mockserver:
+        image: clue/json-server
+        ports:
+          - 4000:80
+        options: >-
+          --health-cmd "curl --fail http://localhost:80/users/1 || exit 1"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 3
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      - name: Install Node dependencies
+        run: npm install
+
+      - name: Run Pact consumer tests
+        run: npm test
+
+      - name: Install Ruby and Pact Verifier
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+
+      - name: Install pact gem
+        run: gem install pact
+
+      - name: Run Provider Verification
+        run: |
+          pact-provider-verifier ./pacts/FrontendApp-MockServer.json \
+            --provider-base-url=http://localhost:4000
