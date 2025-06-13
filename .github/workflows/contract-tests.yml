@@ -38,12 +38,11 @@ jobs:
          gem install pact
             echo "export PATH=$(ruby -r rubygems -e 'puts Gem.bindir'):\$PATH" >> $GITHUB_ENV
 
-      - name: Run Provider Verification
-        run: |
-         pact-provider-verifier ./pacts/FrontendApp-MockServer.json \
-         --provider-base-url=http://localhost:4000
-
-      - name: Run Provider Verification
-        run: |
-          pact-provider-verifier ./pacts/FrontendApp-MockServer.json \
-            --provider-base-url=http://localhost:4000
+      - name: Run Pact Provider Verification via Docker
+        uses: addnab/docker-run-action@v3
+        with:
+            image: pactfoundation/pact-cli:latest
+            options: -v ${{ github.workspace }}:/app -w /app
+            run: |
+                pact-provider-verifier ./pacts/FrontendApp-MockServer.json \
+                --provider-base-url=http://host.docker.internal:4000
