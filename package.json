@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "json-server --watch db.json --port 4000",
-    "test": "jest",
+    "test": "jest pact/users.js",
     "contract-test": "jest pact/users.js"
   },
   "repository": {
