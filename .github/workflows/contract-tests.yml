@@ -34,7 +34,14 @@ jobs:
           ruby-version: '3.2'
 
       - name: Install pact gem
-        run: gem install pact
+        run: |
+         gem install pact
+            echo "export PATH=$(ruby -r rubygems -e 'puts Gem.bindir'):\$PATH" >> $GITHUB_ENV
+
+      - name: Run Provider Verification
+        run: |
+         pact-provider-verifier ./pacts/FrontendApp-MockServer.json \
+         --provider-base-url=http://localhost:4000
 
       - name: Run Provider Verification
         run: |
