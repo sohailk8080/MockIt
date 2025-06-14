@@ -54,3 +54,9 @@ jobs:
        
       - name: Run Schema Validation Tests
         run: npm run test:schema
+
+      - name: Upload Test Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: jest-html-report
+          path: reports/test-report.html  
