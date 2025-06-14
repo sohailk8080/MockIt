@@ -42,7 +42,7 @@ jobs:
         uses: addnab/docker-run-action@v3
         with:
             image: pactfoundation/pact-cli:latest
-            options: -v ${{ github.workspace }}:/app -w /app
+            options: --network=host -v ${{ github.workspace }}:/app -w /app
             run: |
-                pact-provider-verifier ./pacts/FrontendApp-MockServer.json \
-                --provider-base-url=http://host.docker.internal:4000
+               pact-provider-verifier ./pacts/FrontendApp-MockServer.json \
+               --provider-base-url=http://localhost:4000

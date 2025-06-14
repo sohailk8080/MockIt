@@ -23,3 +23,38 @@ D, [2025-06-14T00:05:54.646246 #28627] DEBUG -- : body: {
   "id": "1",
   "name": "Sohail"
 }
+I, [2025-06-14T18:13:23.571991 #1607]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-14T18:13:23.572289 #1607]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:13:23.572305 #1607] DEBUG -- : body :
+I, [2025-06-14T18:13:23.573490 #1607]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has a matching body'
+I, [2025-06-14T18:13:23.573570 #1607]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:13:23.573579 #1607] DEBUG -- : body :
+I, [2025-06-14T18:13:23.574417 #1607]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which includes headers "Content-Type" which equals "application/json"'
+I, [2025-06-14T18:13:23.574499 #1607]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:13:23.574509 #1607] DEBUG -- : body :
+I, [2025-06-14T18:16:34.612334 #1731]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-14T18:16:34.612516 #1731]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:16:34.612535 #1731] DEBUG -- : body :
+I, [2025-06-14T18:16:34.613507 #1731]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has a matching body'
+I, [2025-06-14T18:16:34.613607 #1731]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:16:34.613621 #1731] DEBUG -- : body :
+I, [2025-06-14T18:16:34.614469 #1731]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which includes headers "Content-Type" which equals "application/json"'
+I, [2025-06-14T18:16:34.614565 #1731]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:16:34.614575 #1731] DEBUG -- : body :
+I, [2025-06-14T18:18:34.346021 #1773]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-14T18:18:34.346176 #1773]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:18:34.346190 #1773] DEBUG -- : body :
+I, [2025-06-14T18:18:34.347401 #1773]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has a matching body'
+I, [2025-06-14T18:18:34.347512 #1773]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:18:34.347526 #1773] DEBUG -- : body :
+I, [2025-06-14T18:18:34.348116 #1773]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which includes headers "Content-Type" which equals "application/json"'
+I, [2025-06-14T18:18:34.348208 #1773]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:18:34.348230 #1773] DEBUG -- : body :
+I, [2025-06-14T18:19:46.214789 #2050]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-14T18:19:46.214966 #2050]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T18:19:46.214979 #2050] DEBUG -- : body :
+I, [2025-06-14T18:19:46.219637 #2050]  INFO -- : Received response with status: 200, headers: {"x-powered-by" => "tinyhttp", "access-control-allow-origin" => "*", "access-control-allow-methods" => "GET, HEAD, PUT, PATCH, POST, DELETE", "access-control-allow-headers" => "content-type", "content-type" => "application/json", "date" => "Sat, 14 Jun 2025 12:49:46 GMT", "connection" => "keep-alive", "keep-alive" => "timeout=5", "content-length" => "35"}, see debug logs for body
+D, [2025-06-14T18:19:46.219654 #2050] DEBUG -- : body: {
+  "id": "1",
+  "name": "Sohail"
+}
