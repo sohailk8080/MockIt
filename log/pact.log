@@ -58,3 +58,19 @@ D, [2025-06-14T18:19:46.219654 #2050] DEBUG -- : body: {
   "id": "1",
   "name": "Sohail"
 }
+I, [2025-06-14T20:08:56.535798 #3490]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-14T20:08:56.536086 #3490]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-14T20:08:56.536100 #3490] DEBUG -- : body :
+I, [2025-06-14T20:08:56.538096 #3490]  INFO -- : Received response with status: 200, headers: {"x-powered-by" => "tinyhttp", "access-control-allow-origin" => "*", "access-control-allow-methods" => "GET, HEAD, PUT, PATCH, POST, DELETE", "access-control-allow-headers" => "content-type", "content-type" => "application/json", "date" => "Sat, 14 Jun 2025 14:38:56 GMT", "connection" => "keep-alive", "keep-alive" => "timeout=5", "content-length" => "35"}, see debug logs for body
+D, [2025-06-14T20:08:56.538109 #3490] DEBUG -- : body: {
+  "id": "1",
+  "name": "Sohail"
+}
+I, [2025-06-15T01:31:48.575055 #14215]  INFO -- : Running example 'Verifying a pact between FrontendApp and MockServer Given user exists a request for a user with GET /users/1 returns a response which has status code 200'
+I, [2025-06-15T01:31:48.575340 #14215]  INFO -- : Sending GET request to path: "/users/1" with headers: {"HTTP_ACCEPT" => "application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES" => "Accept", "X_PACT_PROVIDER_STATES" => [{"name" => "user exists"}]}, see debug logs for body
+D, [2025-06-15T01:31:48.575354 #14215] DEBUG -- : body :
+I, [2025-06-15T01:31:48.576987 #14215]  INFO -- : Received response with status: 200, headers: {"x-powered-by" => "tinyhttp", "access-control-allow-origin" => "*", "access-control-allow-methods" => "GET, HEAD, PUT, PATCH, POST, DELETE", "access-control-allow-headers" => "content-type", "content-type" => "application/json", "date" => "Sat, 14 Jun 2025 20:01:48 GMT", "connection" => "keep-alive", "keep-alive" => "timeout=5", "content-length" => "35"}, see debug logs for body
+D, [2025-06-15T01:31:48.577002 #14215] DEBUG -- : body: {
+  "id": "1",
+  "name": "Sohail"
+}

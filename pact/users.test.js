@@ -61,4 +61,5 @@ describe('Contract Tests', () => {
         await provider.verify();
         //console.log("Data found : "+data.name);
     });
+    
 });
